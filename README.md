@@ -13,11 +13,11 @@ Browse and filter results in the LiveView UI
 
 ### v1 — In Progress
 
- Behaviour-based adapter pattern
- %Candidate{} and %Filter{} structs
- Mock adapter with fake data
- Config-driven adapter selection
- LiveView UI
- Greenhouse adapter
- Boolean search passthrough
- CSV export (optional)
+- Behaviour-based adapter pattern
+- %Candidate{} and %Filter{} structs
+- Mock adapter with fake data
+- Config-driven adapter selection
+- LiveView UI
+- Greenhouse adapter
+- Boolean search passthrough
+- CSV export (optional)
