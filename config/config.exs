@@ -7,6 +7,8 @@
 # General application configuration
 import Config
 
+config :sourcer, ats_adapter: Sourcer.ATS.Mock
+
 config :sourcer,
   generators: [timestamp_type: :utc_datetime]
 
