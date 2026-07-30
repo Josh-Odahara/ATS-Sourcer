@@ -4,8 +4,7 @@ defmodule Sourcer.ATS.Greenhouse do
   def search_candidates(%Sourcer.Filter{}) do
     api_key = System.get_env("GREENHOUSE_API_KEY")
 
-    response =
-      case Req.get("https://harvest.greenhouse.io/v3/candidates",
+    case Req.get("https://harvest.greenhouse.io/v3/candidates",
              headers: [accept: "application/json"],
              auth: {:basic, {api_key, ""}}
            ) do
