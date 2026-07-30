@@ -1,18 +1,23 @@
 # Sourcer
+A plug-and-play candidate sourcing tool built with Elixir and Phoenix LiveView. Sourcer connects to your ATS via a swappable adapter pattern, lets you run boolean keyword searches, and displays results in a filterable LiveView UI.
 
-To start your Phoenix server:
+Built for recruiters who want more control over their sourcing workflow without paying for premium ATS tiers.
 
-* Run `mix setup` to install and setup dependencies
-* Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## How It Works
+Type a boolean search query in the UI (e.g. "Elixir AND (Phoenix OR LiveView) AND Remote")
+Sourcer passes the query to your configured ATS adapter
+Results come back as normalized %Candidate{} structs
+Browse and filter results in the LiveView UI
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Project Status
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+### v1 — In Progress
 
-## Learn more
-
-* Official website: https://www.phoenixframework.org/
-* Guides: https://hexdocs.pm/phoenix/overview.html
-* Docs: https://hexdocs.pm/phoenix
-* Forum: https://elixirforum.com/c/phoenix-forum
-* Source: https://github.com/phoenixframework/phoenix
+- Behaviour-based adapter pattern
+- %Candidate{} and %Filter{} structs
+- Mock adapter with fake data
+- Config-driven adapter selection
+- LiveView UI
+- Greenhouse adapter
+- Boolean search passthrough
+- CSV export (optional)
